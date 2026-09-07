@@ -7,7 +7,7 @@ export default defineConfig({
     port: 5173,
     proxy: {
       '/api': {
-        target: 'http://localhost:5000',
+        target: 'https://vardha-project-2.onrender.com',
         changeOrigin: true,
       },
     },
