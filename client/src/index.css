@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  body {
+    @apply bg-concrete-50 font-body text-ink;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply relative overflow-hidden bg-steel-950 hover:bg-steel-800 text-white font-bold px-7 py-4 text-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl;
+  }
+  .btn-accent {
+    @apply relative overflow-hidden bg-amber hover:bg-amber-600 text-steel-950 font-bold px-7 py-4 text-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-lg;
+  }
+  .section-eyebrow {
+    @apply text-amber text-xs font-bold tracking-[0.18em] uppercase mb-2;
+  }
+  .card-hover {
+    @apply transition-all duration-500 hover:-translate-y-2 hover:border-amber/40 hover:shadow-[0_18px_45px_rgba(20,25,30,0.12)];
+  }
+}
